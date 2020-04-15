@@ -177,7 +177,7 @@ $data = '{
 				"avgDailyIncomeInUSD": 5,
 				"avgDailyIncomePopulation": 0.71
 			},
-			"periodType": "days",do
+			"periodType": "days",
 			"timeToElapse": 38,
 			"reportedCases": 2747,
 			"population": 66622705,
