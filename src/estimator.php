@@ -1,34 +1,3 @@
-
-
-
-Skip to content
-Using Gmail with screen readers
-
-1 of 3,255
-(no subject)
-Inbox
-x
-
-alfred musyoka
-Attachments
-1:53 AM (2 minutes ago)
-to me
-
-
-Kind Regards,
-
-Alfred  Musyoka
-
-
-FULL STACK DEVELOPER 
-
-Mobile Safaricom:  (+254) 0711 359 336
-
-Mobile Airtel: (+254) 0733 147 895
-
-Attachments area
-Well received, thanks.Received, thank you.Thanks, received.
-
 <?php
 
 function covid19ImpactEstimator($data)
@@ -197,21 +166,21 @@ function jsonApi($data,$totalHospitalBeds,$reportedCases, $periodType, $timeToEl
 		 $restApi = (object)array();
 		 $restApi->data = json_decode($data);
 		 $restApi->estimate = json_decode(json_encode($final));
-		 print_r(json_encode($restApi));
+		 return json_encode($restApi);
 
 }
 
-$data = '{
-			"region": {
-				"name": "Africa",
-				"avgAge": 19.7,
-				"avgDailyIncomeInUSD": 5,
-				"avgDailyIncomePopulation": 0.71
-			},
-			"periodType": "days",
-			"timeToElapse": 38,
-			"reportedCases": 2747,
-			"population": 66622705,
-			"totalHospitalBeds": 678874
-		}';
+// $data = '{
+// 			"region": {
+// 				"name": "Africa",
+// 				"avgAge": 19.7,
+// 				"avgDailyIncomeInUSD": 5,
+// 				"avgDailyIncomePopulation": 0.71
+// 			},
+// 			"periodType": "days",
+// 			"timeToElapse": 38,
+// 			"reportedCases": 2747,
+// 			"population": 66622705,
+// 			"totalHospitalBeds": 678874
+// 		}';
 covid19ImpactEstimator($data);
